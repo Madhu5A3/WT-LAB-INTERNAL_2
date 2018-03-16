@@ -30,7 +30,7 @@ function showdata(str){
   <div class="auto">
     <img class="center" src="download.png" alt="Adidas">
       <div class="l">
-        <p id="def1"> Adidas is the one of the most provocative brand in the  world with it's more interactive showcase of the
+        <p id="def1"> Adidas is the one of the most provocative brands in the  world with it's more interactive showcase of the
         products and brand value</p>
         <span>According to 2017 marketing report Adidas has utmost 21% of the  market share in the world with over 200 billion dollar turn over every year</span>
         <p id="def">Adidas being the world's brand in all most all core ware it also has started few incentives which were good to cherish for!!
@@ -50,9 +50,9 @@ function showdata(str){
       </div>
       <img class="gear" src="Terroristas.jpg" alt="Syria">
       <div class="n">
-          <p id="def1">Back to the times of the then ruler Bashar Al Shaan the President of Syria used to be a great leader and a good enthusiast in development of completer hygiene and greater economic prosperity</p>
+          <p id="def1">Back to the times of the then ruler Bashar Al Shaan the President of Syria used to be a great leader and a good enthusiast in development of complete hygiene and greater economic prosperity</p>
           <p id="def">But as the time went he became literally corrupted and exploited the nation,with which the people were vexed up and protested aganist him</p>
-          <p id="def2">So he became brutally weird and declared a war on the people and from then almost 3,00,000 peolpe were killed and it's a bloody mass acres going around there</p>
+          <p id="def2">So he became brutally weird and declared a war on the people and from then almost 3,00,000 peolpe were killed and it's a bloody mass acre going around there</p>
   </div>
   <!--textarea id="cool"></textarea-->
 </body>
