@@ -1,10 +1,13 @@
 <!--?php include_once("register.php") ?-->
 <?php include('server.php'); 
 if(isset($_POST['register'])){
-		//$username = $_POST['username'];
+		$username = $_POST['username'];
 		$email = $_POST['email'];
 		$password = $_POST['password1'];
-	    //Ensure that all fields are filled properly
+		//Ensure that all fields are filled properly
+		if(empty($username)){
+			array_push($errors,"Username is required");
+		}
 		if(empty($email)){
 			array_push($errors,"Email is required");
 		}
@@ -14,7 +17,7 @@ if(isset($_POST['register'])){
 		//if there are no errors , save user data to the database
 		if(count($errors) == 0){
 			$password = md5($password); // encrypting password before storing it into database (security)
-			$sql = "INSERT INTO user_table (email, password1) VALUES ($email','$password')";
+			$sql = "INSERT INTO user_data (username, email, password1) VALUES ('$username','$email','$password')";
 			mysqli_query($db, $sql);	
 			header('location:login.php'); // redirect to home page
 		}
@@ -35,13 +38,13 @@ if(isset($_POST['register'])){
 	<form method="post" action="">
 		<!--Display errors here-->
 		<?php include('errors.php'); ?>
-		<!--div class="input_group">
+		<div class="input_group">
 			<label>Username</label>
-			<input type="text" name="username" placeholder="Your name" value="<?php echo $username; ?>">
-		</div-->
+			<input type="text" name="username" placeholder="Your name" value="username">
+		</div>
 		<div class="input_group">
 			<label>Email</label>
-			<input type="text" name="email" placeholder="Your Email" value="<?php echo $email; ?>">
+			<input type="text" name="email" placeholder="Your Email" value="example@email.com">
 		</div>
 		<div class="input_group">
 			<label>Password</label>
